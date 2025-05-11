@@ -1,21 +1,22 @@
 * {
     /* `otf-font-awesome` and SpaceMono Nerd Font are required to be installed for icons */
-    font-family: "Hack Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-family: "Adwaita Sans", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
     transition: background-color .3s ease-out;
     min-height: 0;
 }
 
 window#waybar {
     min-height: 0;
-    background-color: rgba(24, 24, 37, 0.7);
+    background: linear-gradient(180deg, #ffffff, #f7f7f7);
     margin: 0px 0px;
     padding: 0px 0px;
     border-style: solid;
     border-width: 1px;
     border-radius: 11px;
-    border-color: #45475a;
-    color: #cdd6f4;
+    border-color: #ffffff;
+    color: #505050;
     font-family: 
         SpaceMono Nerd Font,
         feather;
@@ -32,32 +33,19 @@ window#waybar {
 }
 
 #clock {
-    color:#cdd6f4;
+    color:#3c3c3c;
 }
 #battery {
-    color:#f38ba8;
-    padding: 0 10px;
+    color:#9fe044;
 }
-#cpu {
-    color:#f5e0dc;
-    padding: 0 10px;
-}
-#memory {
-    color:#f2cdcd;
-    padding: 0 10px;
-}
+#cpu,
+#memory,
 #disk,
 #temperature,
 #backlight,
-#network {
-    color:#cba6f7;
-    padding: 0 10px;
-}
+#network,
 #pulseaudio,
-#wireplumber {
-    color:#f5c2e7;
-    padding: 0 10px;
-}
+#wireplumber,
 #custom-media,
 #tray,
 #mode,
@@ -67,7 +55,7 @@ window#waybar {
 #language,
 #mpd {
     padding: 0 10px;
-    border-radius:11px;
+    border-radius: 11px;
 }
 
 #clock:hover,
@@ -97,22 +85,20 @@ window#waybar {
   font-family:
     SpaceMono Nerd Font,
     feather;
-  font-weight: 500;
+  font-weight: 900;
   font-size: 13pt;
-  color: #cdd6f4;
-  border:transparent;
-  border-radius: 0px;
+  color: #505050;
+  border:none;
+  border-radius: 11px;
 }
 
 #workspaces button.active {
-    color: #74c7ec;
-    font-weight: 600;
-    text-shadow: 0 0 4px #74c7ec 
+    color: #7dcfff; 
 }
 
 #workspaces button:hover {
   background: transparent;
-  color: #ffffff;
+  color: #cdd6f4;
   box-shadow: none;
 }
 
@@ -124,24 +110,4 @@ window#waybar {
 }
 #custom-arch:hover {
     color: #1793d1;
-}
-
-menu {
-	border-radius: 11px;
-	background-color: rgba(24, 24, 37, 1);
-	color: #cdd6f4;
-}
-menuitem {
-        border-radius: 7px;
-}
-menuitem:hover {
-        color: #74c7ec;
-        font-weight: 600;
-        text-shadow: 0 0 4px #74c7ec
-}
-tooltip {
-        border-radius: 11px;
-        background-color: rgba(24, 24, 37, 1);
-        color: #cdd6f4;
-        font-size: 11px;
 }
